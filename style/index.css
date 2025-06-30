@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: #F8F8FF;
+    --sec-text-color: #d3d3d3;
+}
+/* FONT */
+
+.noto-sans-bold {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.noto-sans-regular {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.noto-sans-thin {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+body{
+    background-color: #121212;
+}
+nav{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+
+#logo{
+    width: 3rem;
+    border-radius: 100px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+nav ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.btn-primary{
+    background-color: rgba(255, 255, 255, 0.308);
+}
+section {
+    min-height: 100vh;
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes .title left and .title-img right */
+    gap: 2rem;
+}
+.title{
+    color: var(--text-color);
+}
+.title h1{
+    letter-spacing: 1px;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.title p{
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: var(--sec-text-color);
+}
+.title-img img {
+    width: 30rem;
+    box-shadow: 0 8px 32px 0 rgba(255, 140, 0, 0.6), 0 0 0 4px rgba(255,140,0,0.15);
+    border-radius: 16px; /* optional: soften corners if your image allows */
+}
+
+
+.about{
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-us-content h2{
+    color: var(--text-color);
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+.about-us-content p{
+    color: var(--sec-text-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
