@@ -7,6 +7,7 @@
 :root{
     --text-color: #F8F8FF;
     --sec-text-color: #d3d3d3;
+    --third-text-color: #b8b8b8;
 }
 /* FONT */
 
@@ -73,7 +74,7 @@ nav ul li a::after{
     content: "";
     height: 3px;
     width: 0;
-    background: #ff0000;
+    background: #ffffff;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -82,11 +83,20 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-
-.btn-primary{
-    background-color: rgba(255, 255, 255, 0.308);
+.discord{
+    color: #7289DA !important;
 }
-section {
+.discord::after{
+    background: #7289DA !important;
+}
+.btn-primary{
+    background-color: rgba(255, 255, 255, 0.158);
+    color: var(--sec-text-color);
+}
+.btn-primary:hover{
+    background-color: rgba(255, 255, 255, 0.185);
+}
+.home {
     min-height: 100vh;
     margin: 0 2rem;
     display: flex;
@@ -111,24 +121,74 @@ section {
 .title-img img {
     width: 30rem;
     box-shadow: 0 8px 32px 0 rgba(255, 140, 0, 0.6), 0 0 0 4px rgba(255,140,0,0.15);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
     border-radius: 16px; /* optional: soften corners if your image allows */
 }
+.title-img img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.6), 0 0 0 4px rgba(255, 0, 0, 0.15);
+}
 
-
-.about{
-    text-align: center;
-    min-height: 100vh;
+.features{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    gap: 3rem;
 }
-.about-us-content h2{
+.features h2{
     color: var(--text-color);
     font-size: 2.3rem;
     margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 10px;
 }
-.about-us-content p{
+.features ul{
     color: var(--sec-text-color);
     font-size: 1rem;
     margin-bottom: 1rem;
+}
+.features-list{
+    letter-spacing: 1px;
+    gap: 3rem;
+    margin-top: 6rem;
+}
+.features-img{
+    width: 20rem;
+}
+
+
+.leaderboard{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    color: #d3d3d3;
+    min-height: 100vh;
+    gap: 3rem;
+}
+.leaderboard h2{
+    color: var(--text-color);
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+.leaderboard p{
+    color: var(--sec-text-color);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.leaderboard-container{
+    background-color: rgba(255, 255, 255, 0.089);
+    padding: 2rem;
+    border-radius: 16px;
+    width: fit-content;
+}
+.leaderboard-trackName{
+    margin-bottom: 1.5rem;
+}
+.leaderboard-item p{
+    color: var(--sec-text-color);
 }
