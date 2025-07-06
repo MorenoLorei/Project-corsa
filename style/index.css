@@ -40,7 +40,7 @@
 body{
     background-color: #121212;
 }
-nav{
+.navbar{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.26);
     width: 100%;
@@ -70,30 +70,19 @@ nav ul li a{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
-nav ul li a::after{
-    content: "";
-    height: 3px;
-    width: 0;
-    background: #ffffff;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-nav ul li a:hover::after{
-    width: 100%;
-}
+
+
 nav ul li a.discord:hover::after {
     width: 0 !important;
 }
 .discord{
     color: #7289DA !important;
 }
-.btn-primary{
+.btn-dim{
     background-color: rgba(255, 255, 255, 0.158);
     color: var(--sec-text-color);
 }
-.btn-primary:hover{
+.btn-dim:hover{
     background-color: rgba(255, 255, 255, 0.185);
 }
 
@@ -189,7 +178,6 @@ nav ul li a.discord:hover::after {
     background-color: rgba(255, 255, 255, 0.089);
     padding: 2rem;
     border-radius: 16px;
-    width: fit-content;
 }
 .leaderboard-item h3{
     font-size: 1.5rem;
@@ -204,6 +192,52 @@ nav ul li a.discord:hover::after {
     margin-bottom: 1rem;
 }
 .leaderboard-item h5{
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 1rem;
+}
+
+
+.community {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.community-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.community-content h2{
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-color);
+    letter-spacing: 10px;
+}
+.community-content p{
+    text-align: center;
+    color: var(--sec-text-color);
+ }
+.community-content-carousel img{
+    justify-content: center;
+}
+
+
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.about-us-content {
+    align-content: center;
+    text-align: center;
+}
+.about-us-content h2{
+    letter-spacing: 10px;
+    color: var(--text-color);
+}
+.about-us-content p{
+    color: var(--sec-text-color);
 }
