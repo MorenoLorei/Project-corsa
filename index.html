@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Corsa - The ultimate MotoGP racing experience on Roblox with realistic physics, multiple tracks, and online multiplayer races. Join our community today!">
+    <meta name="keywords" content="Project Corsa, Roblox racing game, MotoGP, motorcycle racing, online racing, multiplayer racing game">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://projectcorsa.com/index.html">
+    <link rel="icon" href="./image/project-corsa-icon.webp" type="image/png">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -18,18 +23,37 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
-    <script src="./script/ssmoothscrolling.js"></script>
-    <script src="./script/animation.js"></script>
+    <script src="./script/smoothscrolling.js"></script>
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/component.css">
-    <title>PROJECT CORSA</title>
+    <title>Project Corsa - Ultimate MotoGP Racing Experience on Roblox</title>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Project Corsa",
+      "description": "The ultimate MotoGP racing experience on Roblox with realistic physics, multiple tracks, and online multiplayer races.",
+      "genre": ["Racing", "Simulation", "Sports"],
+      "platformRequirements": "Roblox",
+      "gamePlatform": "Roblox",
+      "applicationCategory": "Game",
+      "operatingSystem": "Cross-platform",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="./image/SCHENIDER WOWOW.jpg" alt="Logo" id="logo" height="30">
+            <img src="./image/project-corsa-icon.webp" alt="Project Corsa Logo" id="logo" height="30">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +61,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto noto-sans-thin">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#community">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#features">Features</a>
@@ -61,17 +85,17 @@
         <div class="title">
             <h1 class="noto-sans-bold">PROJECT CORSA</h1>
             <p class="noto-sans-regular">Experience racing adrenaline on roblox</p>
-            <a href="https://www.roblox.com/games/80085043174485/Project-Corsa" class="noto-sans-bold btn btn-primary noto-sans-thin">Play Now</a>
+            <a href="https://www.roblox.com/games/80085043174485/Project-Corsa" class="noto-sans-bold btn btn-dim noto-sans-thin" title="Link to project corsa roblox game">Play Now</a>
         </div>
         <div class="title-img">
-            <img src="./image/bike-transparent.png" alt="Arrow" class="transparent-bike">
+            <img src="./image/bike-transparent.png" alt="Project Corsa motorcycle racing bike" class="transparent-bike">
         </div>
     </section>
 
     <section class="features" id="features">
 <h2 class="noto-sans-bold ft">FEATURES</h2>
 <div class="features-image">
-    <img src="./image/ducati-wheelie.png" alt="features-image" class="features-img">
+    <img src="./image/erasebg-transformed.webp" alt="Project Corsa game features showcase with motorcycle racing" class="features-img">
 </div>
 <ul class="noto-sans-thin features-list ">
     <li>High-quality graphics and animations</li>
@@ -83,10 +107,10 @@
 </ul>
 </section>
 
-<section class="leaderboard" id="leaderboard">
+<section class="leaderboard mb-5" id="leaderboard">
     <div class="leaderboard-title">
         <h2 class="noto-sans-bold">LEADERBOARD</h2>
-        <p class="noto-sans-regular">These are the top racers in Project Corsa!</p>
+        <p class="noto-sans-regular">Be the top racers in Project Corsa!</p>
     </div>
     <div class="leaderboard-container">
         <div class="leaderboard-trackName">
@@ -109,6 +133,113 @@
             <h4 class="noto-sans-regular">Player Name: RacerX</h4>
             <h4 class="noto-sans-regular bikeclass">Bike: motoGP</h4>
             <h5 class="noto-sans-thin">Time: 1:25.012</h5>
+        </div>
+    </div>
+</section>
+
+<section class="community container" id="community">
+    <div class="community-content">
+        <div class="community-content-title">
+            <h2 class="noto-sans-bold mb-3">OUR COMMUNITY</h2>
+            <p class="noto-sans-thin mb-5">Project Corsa boasts an active and passionate community of motorcycle enthusiasts and racing fans.
+            </p>
+        </div>
+        <div class="community-content-carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/project-corsa-community-image-wheelie.webp" class="d-block w-100" alt="project corsa idemitsu honda gp wheelie">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Idemitsu honda wheelie</h5>
+                            <p>Credit: DavidKS15 </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/project-corsa-community-image.webp" class="d-block w-100" alt="Project Corsa players lining up before race start">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Lining up before race</h5>
+                            <p>Credit: CARUS_02</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/project-corsa-together.webp" class="d-block w-100" alt="Project Corsa community photoshoot with multiple players">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Community photoshoot</h5>
+                            <p>Credit: surz and everyone</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="community-content-video container mb-5">
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/Pbn39Ev05og" title="Cruising on Chang International Circuit | Project Corsa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/NmkjWqjIqzg" title="[Mandalika] Red Bull KTM Ajo Moto2 (with @aryothediabolical) | Project Corsa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/EVBE5HnQh78" title="The Most Realistic Motorcycle Game on Roblox - Project Corsa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/EO1g4VkiT3g" title="I did 23 laps in project corsa..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/5utqmw9jr3c" title="PERTAMA KALI NYOBA MAP PROJECT CORSA TAPI SEBAGUS INI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/vfmh8IcMHN4" title="MINDBLOWING MOTOGP GAME!! | Roblox Racing Games Part 22: Project Corsa!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-us" id="about-us">
+    <div class="container about-us-content">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="noto-sans-bold text-center">ABOUT US</h2>
+                <p class="noto-sans-thin text-justify">
+                    Welcome to Project Corsa, feel the ultimate racing experience on Roblox! We're a small team of passionate developers and designers dedicated to creating an immersive and thrilling racing game that brings the excitement of high-speed racing to your fingertips.
+                </p>
+                <p class="noto-sans-thin text-justify">
+                    At Project Corsa, our main mission is to provide a unique and engaging racing experience that combines stunning graphics, realistic physics, and addictive gameplay. We strive to create a community-driven platform where players can compete, socialize, and showcase their driving skills.
+                </p>
+                <p class="noto-sans-thin text-justify">
+                    Our team consists of experienced developers and designers who are passionate about racing games and committed to delivering high-quality content. We're constantly working to improve the game, adding new features, tracks, and vehicles to keep the experience fresh and exciting. we listen to every user feedback and improve the game based on what they want.We believe that our users are the backbone of our community, and their feedback is invaluable in helping us shape the game's future. By listening to their suggestions and concerns, we can identify areas for improvement and make data-driven decisions to enhance the overall gaming experience.
+
+                </p>
+                <p class="noto-sans-thin text-justify">
+                    Ready to experience the thrill of high-speed racing on Roblox? Join our community today and get behind the wheel of your favorite vehicle! With regular updates and new content added frequently, you'll never run out of excitement and challenges.
+                </p>
+            </div>
         </div>
     </div>
 </section>
