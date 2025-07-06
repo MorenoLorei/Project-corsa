@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root{
     --text-color: #F8F8FF;
     --sec-text-color: #d3d3d3;
@@ -35,11 +34,11 @@
   font-variation-settings:
     "wdth" 100;
 }
-
-
+/*IDK WHY I ADDED A COMMENT, BUT U KNOW WHAT THIS FOR*/
 body{
     background-color: #121212;
 }
+/*START OF CONTENT STYLING*/
 .navbar{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.26);
@@ -51,14 +50,11 @@ body{
     backdrop-filter: blur(5px);
     z-index: 1000;
 }
-
-
 #logo{
     width: 3rem;
     border-radius: 100px;
     transition: 0.3s ease-in-out;
 }
-
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -70,8 +66,6 @@ nav ul li a{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
-
-
 nav ul li a.discord:hover::after {
     width: 0 !important;
 }
@@ -85,9 +79,6 @@ nav ul li a.discord:hover::after {
 .btn-dim:hover{
     background-color: rgba(255, 255, 255, 0.185);
 }
-
-
-
 .home {
     min-height: 100vh;
     margin: 0 4rem;
@@ -119,9 +110,6 @@ nav ul li a.discord:hover::after {
     transform: scale(1.02);
     box-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.6), 0 0 0 4px rgba(255, 0, 0, 0.15);
 }
-
-
-
 .features{
     display: flex;
     align-items: center;
@@ -150,9 +138,6 @@ nav ul li a.discord:hover::after {
 .features-img{
     width: 20rem;
 }
-
-
-
 .leaderboard{
     display: flex;  
     align-items: center;
@@ -195,8 +180,6 @@ nav ul li a.discord:hover::after {
     font-size: 1rem;
     margin-top: 1rem;
 }
-
-
 .community {
     display: flex;
     align-items: center;
@@ -220,10 +203,9 @@ nav ul li a.discord:hover::after {
     color: var(--sec-text-color);
  }
 .community-content-carousel img{
+    border-radius: 50px;
     justify-content: center;
 }
-
-
 .about-us{
     display: flex;
     align-items: center;
