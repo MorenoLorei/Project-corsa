@@ -241,3 +241,17 @@ nav ul li a.discord:hover::after {
 .about-us-content p{
     color: var(--sec-text-color);
 }
+
+.footer{
+    justify-content: center;
+    background-color: #303030;
+    color: white;
+}
+.footer-content {
+    margin-top: 5%;
+}
+.footer a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}

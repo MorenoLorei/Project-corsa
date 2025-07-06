@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
     <script src="./script/smoothscrolling.js"></script>
     <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/component.css">
+    <link rel="stylesheet" href="./style/mediaqueries.css">
     <title>Project Corsa - Ultimate MotoGP Racing Experience on Roblox</title>
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -61,7 +61,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto noto-sans-thin">
                 <li class="nav-item">
-                    <a class="nav-link" href="#community">Home</a>
+                    <a class="nav-link" href="#community">community</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#features">Features</a>
@@ -82,29 +82,29 @@
 </nav>
 
 <section class="home" id="home">
-        <div class="title">
-            <h1 class="noto-sans-bold">PROJECT CORSA</h1>
-            <p class="noto-sans-regular">Experience racing adrenaline on roblox</p>
-            <a href="https://www.roblox.com/games/80085043174485/Project-Corsa" class="noto-sans-bold btn btn-dim noto-sans-thin" title="Link to project corsa roblox game">Play Now</a>
-        </div>
-        <div class="title-img">
-            <img src="./image/bike-transparent.png" alt="Project Corsa motorcycle racing bike" class="transparent-bike">
-        </div>
-    </section>
+    <div class="title">
+        <h1 class="noto-sans-bold">PROJECT CORSA</h1>
+        <p class="noto-sans-regular">Experience racing adrenaline on roblox</p>
+        <a href="https://www.roblox.com/games/80085043174485/Project-Corsa" class="noto-sans-bold btn btn-dim noto-sans-thin" title="Link to project corsa roblox game">Play Now</a>
+    </div>
+    <div class="title-img">
+        <img src="./image/bike-transparent.png" alt="Project Corsa motorcycle racing bike" class="transparent-bike">
+    </div>
+</section>
 
-    <section class="features" id="features">
-<h2 class="noto-sans-bold ft">FEATURES</h2>
-<div class="features-image">
-    <img src="./image/erasebg-transformed.webp" alt="Project Corsa game features showcase with motorcycle racing" class="features-img">
-</div>
-<ul class="noto-sans-thin features-list ">
-    <li>High-quality graphics and animations</li>
-    <li>Realistic MotoGP physics and controls</li>
-    <li>Multiple bikes and tracks</li>
-    <li>Online multiplayer races</li>
-    <li>Leaderboards and achievements</li>
-    <li>Regular updates and events</li>
-</ul>
+<section class="features" id="features">
+    <h2 class="noto-sans-bold ft">FEATURES</h2>
+    <div class="features-image">
+        <img src="./image/erasebg-transformed.webp" alt="Project Corsa game features showcase with motorcycle racing" class="features-img">
+    </div>
+    <ul class="noto-sans-thin features-list ">
+        <li>High-quality graphics and animations</li>
+        <li>Realistic MotoGP physics and controls</li>
+        <li>Multiple bikes and tracks</li>
+        <li>Online multiplayer races</li>
+        <li>Leaderboards and achievements</li>
+        <li>Regular updates and events</li>
+    </ul>
 </section>
 
 <section class="leaderboard mb-5" id="leaderboard">
@@ -114,28 +114,29 @@
     </div>
     <div class="leaderboard-container">
         <div class="leaderboard-trackName">
-            <h3 class="noto-sans-bold">TRACK:Mandalika Circuit</h3>
+            <h3 class="noto-sans-bold">Mandalika Circuit</h3>
         </div>
         <div class="leaderboard-item">
-            <h3 class="noto-sans-bold">1st </h3>
-            <h4 class="noto-sans-regular">Player Name: JohnDoe</h4>
-            <h4 class="noto-sans-regular">Bike: motoGP</h4>
-            <h5 class="noto-sans-thin">Time: 1:23.456</h5>
+            <h3 class="noto-sans-bold e">1st </h3>
+            <h4 class="noto-sans-regular e">Player Name: JohnDoe</h4>
+            <h4 class="noto-sans-regular e">Bike: motoGP</h4>
+            <h5 class="noto-sans-thin e">Time: 1:23.456</h5>
         </div>
         <div class="leaderboard-item">
-            <h3 class="noto-sans-bold">2nd </h3>
-            <h4 class="noto-sans-regular">Player Name: JaneSmith</h4>
-            <h4 class="noto-sans-regular">Bike: motoGP</h4>
-            <h5 class="noto-sans-thin">Time: 1:24.789</h5>
+            <h3 class="noto-sans-bold e">2nd </h3>
+            <h4 class="noto-sans-regular e">Player Name: JaneSmith</h4>
+            <h4 class="noto-sans-regular e">Bike: motoGP</h4>
+            <h5 class="noto-sans-thin e">Time: 1:24.789</h5>
         </div>
         <div class="leaderboard-item">
-            <h3 class="noto-sans-bold">3rd </h3>
-            <h4 class="noto-sans-regular">Player Name: RacerX</h4>
-            <h4 class="noto-sans-regular bikeclass">Bike: motoGP</h4>
-            <h5 class="noto-sans-thin">Time: 1:25.012</h5>
+            <h3 class="noto-sans-bold e">3rd </h3>
+            <h4 class="noto-sans-regular e">Player Name: RacerX</h4>
+            <h4 class="noto-sans-regular e">Bike: motoGP</h4>
+            <h5 class="noto-sans-thin e">Time: 1:25.012</h5>
         </div>
     </div>
 </section>
+
 
 <section class="community container" id="community">
     <div class="community-content">
@@ -243,6 +244,40 @@
         </div>
     </div>
 </section>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="row">
+            <div class="col-md-4 footer-content">
+                <h5 class="noto-sans-bold">Project Corsa</h5>
+                <p class="noto-sans-thin">The ultimate MotoGP racing experience on Roblox.</p>
+            </div>
+            <div class="col-md-4 footer-content">
+                <h5 class="noto-sans-bold">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="noto-sans-thin">Home</a></li>
+                    <li><a href="#features" class="noto-sans-thin">Features</a></li>
+                    <li><a href="#leaderboard" class="noto-sans-thin">Leaderboard</a></li>
+                    <li><a href="#community" class="noto-sans-thin">Community</a></li>
+                    <li><a href="#about-us" class="noto-sans-thin">About Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 footer-content">
+                <h5 class="noto-sans-bold">Connect with Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://discord.gg/Pecw2qptbF" target="_blank" class="noto-sans-thin">Discord</a></li>
+                    <li><a href="https://www.roblox.com/games/80085043174485/Project-Corsa" target="_blank" class="noto-sans-thin">Roblox</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="noto-sans-thin">&copy; 2025 Project Corsa. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 </html>
