@@ -1,0 +1,229 @@
+@media screen and (min-width: 768px) and (max-width: 1010px) {
+    .features {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .features-img {
+        width: 100%;
+        max-width: 15rem;
+    }
+
+    .features-list {
+        margin-top: 1rem;
+    }
+
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    /* Home section */
+    .home {
+        min-height: 100vh;
+        justify-content: center;
+        display: grid;
+        margin: 0 1rem;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    .title h1 {
+        font-size: clamp(3rem, 10vw, 3rem);
+    }
+
+    .title-img img {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    /* Features section */
+    .features {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .features-img {
+        width: 100%;
+        max-width: 15rem;
+    }
+
+    .features-list {
+        margin-top: 1rem;
+        list-style: none;
+    }
+
+    /* Leaderboard section */
+    .leaderboard {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .leaderboard-container {
+        width: fit-content;
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.6), 0 0 0 4px rgba(232, 232, 232, 0.15);
+        margin: 0 auto;
+    }
+    .leaderboard-item h3,.leaderboard-item h4, .leaderboard-item h5 {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+
+    /* About us section */
+    .about-us {
+        padding: 2rem 1rem;
+    }
+
+}
+
+/* Additional media query for very small screens */
+@media screen and (max-width: 480px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+
+    #logo {
+        width: 2rem;
+    }
+
+    .title h1 {
+        font-size: clamp(2rem, 8vw, 1rem);
+    }
+    .title p{
+        font-size: clamp(0.5rem, 5vw, 1rem);
+    }
+
+    .leaderboard h2, .community-content h2, .about-us-content h2 {
+        font-size: clamp(1rem, 5vw, 2.5rem);
+        letter-spacing: 5px;
+    }
+}
+
+/* Media query for large screens (1280px to 2400px) */
+@media screen and (min-width: 1400px) and (max-width: 2400px) {
+    /* Container max-width to prevent excessive stretching */
+    .container, .container-fluid {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    /* Home section */
+    .home {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 0 5rem;
+        gap: 3rem;
+    }
+
+    .title h1 {
+        font-size: clamp(5rem, 5vw, 7rem);
+    }
+
+    .title p {
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        margin-bottom: 3rem;
+    }
+
+    .title-img img {
+        width: clamp(30rem, 40vw, 50rem);
+    }
+
+    /* Features section */
+    .features {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 0 5rem;
+        gap: 5rem;
+    }
+
+    .features h2 {
+        font-size: clamp(2.3rem, 3vw, 4rem);
+    }
+
+    .features-img {
+        width: clamp(20rem, 25vw, 35rem);
+    }
+
+    .features-list {
+        font-size: clamp(1rem, 1.2vw, 1.5rem);
+    }
+
+    /* Leaderboard section */
+    .leaderboard {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 0 5rem;
+        gap: 8rem;
+    }
+
+    .leaderboard h2 {
+        font-size: clamp(2.3rem, 3vw, 4rem);
+    }
+
+    .leaderboard-container {
+        padding: 3rem;
+    }
+
+    .leaderboard-item h3 {
+        font-size: clamp(1.5rem, 2vw, 2.5rem);
+    }
+
+    .leaderboard-item h4 {
+        font-size: clamp(1.2rem, 1.5vw, 2rem);
+    }
+
+    .leaderboard-item h5 {
+        font-size: clamp(1rem, 1.2vw, 1.5rem);
+    }
+
+    /* Community section */
+    .community {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    .community-content h2 {
+        font-size: clamp(2.3rem, 3vw, 4rem);
+    }
+
+    .community-content p {
+        font-size: clamp(1rem, 1.2vw, 1.5rem);
+        max-width: 70%;
+        margin: 0 auto 2rem;
+    }
+
+    /* About us section */
+    .about-us {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    .about-us-content h2 {
+        font-size: clamp(2.3rem, 3vw, 4rem);
+    }
+
+    .about-us-content p {
+        font-size: clamp(1rem, 1.2vw, 1.5rem);
+        max-width: 70%;
+        margin: 1.5rem auto;
+    }
+
+    /* Footer */
+    .footer-content {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+
+    .footer-content h5 {
+        font-size: clamp(1.2rem, 1.5vw, 2rem);
+    }
+
+    .footer-content p, .footer-content a {
+        font-size: clamp(1rem, 1.2vw, 1.3rem);
+    }
+}
