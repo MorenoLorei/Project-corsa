@@ -159,7 +159,7 @@ nav ul li a.discord:hover::after {
     justify-content: center;
     color: #d3d3d3;
     min-height: 100vh;
-    gap: 5rem;
+    gap: 10rem;
 }
 .leaderboard h2{
     color: var(--text-color);
