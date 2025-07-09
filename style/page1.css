@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color: #F8F8FF;
+    --sec-text-color: #d3d3d3;
+    --third-text-color: #b8b8b8;
+}
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/* FONT */
+
+.noto-sans-bold {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
+}
+.noto-sans-regular {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
+}
+.noto-sans-thin {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
+}
+/*IDK WHY I ADDED A COMMENT, BUT U KNOW WHAT THIS FOR*/
+body{
+    background-color: #121212;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*START OF CONTENT STYLING*/
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+#logo{
+    width: 3rem;
+    border-radius: 100px;
+    transition: 0.3s ease-in-out;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+nav ul li a.discord:hover::after {
+    width: 0 !important;
+}
+.discord{
+    color: #7289DA !important;
+}
+
+.announcement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.announcement-title h1{
+    color: var(--text-color);
+    letter-spacing: 10px;
+}
+.announcement-title p{
+    color: var(--sec-text-color);
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+.announcement-image img{
+    height: 20rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px 0 rgb(248, 190, 60), 0 0 0 4px rgba(255, 0, 0, 0.15);
+}
+
+.rider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.rider-content h2{
+    color: var(--text-color);
+    letter-spacing: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.rider-content p{
+    color: var(--sec-text-color);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+.card-blog{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background-color: #403f3f;
+    width: 15rem;
+}
+.card-blog h5{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.card-blog p{
+    color: var(--sec-text-color);
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.btn-blog{
+    color: var(--text-color);
+    background-color: brown;
+    transition: 0.3s ease-in-out;
+}
+.card-transparent{
+    align-items: center;
+    background-color: transparent;
+}
+.card img{
+    justify-content: center;
+    width: 15rem;
+    border-radius: 16px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    justify-content: center;
+    background-color: #303030;
+    color: white;
+    margin-top: auto;
+    width: 100%;
+    padding: 20px 0;
+}
+.footer-content {
+    margin-top: 2%;
+}
+.footer a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
