@@ -97,10 +97,21 @@ nav ul li a.discord:hover::after {
     letter-spacing: 1px;
     font-size: 1rem;
 }
-.announcement-image img{
-    height: 20rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px 0 rgb(248, 190, 60), 0 0 0 4px rgba(255, 0, 0, 0.15);
+.announcement-content {
+    gap: 2rem;
+}
+.card-body  h5{
+    color: var(--text-color);
+}
+.card-body p{
+    color: var(--sec-text-color);
+}
+.text-muted {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    width: 100%;
+    text-align: center;
 }
 
 .rider{
@@ -121,7 +132,7 @@ nav ul li a.discord:hover::after {
 .rider-content p{
     color: var(--sec-text-color);
     letter-spacing: 1px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0;
 }
 
@@ -129,13 +140,9 @@ nav ul li a.discord:hover::after {
     padding: 1em;
 }
 .card-blog{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     border-radius: 16px;
     background-color: #403f3f;
-    width: 15rem;
+
 }
 .card-blog h5{
     color: var(--text-color);
@@ -149,8 +156,9 @@ nav ul li a.discord:hover::after {
 }
 .btn-blog{
     color: var(--text-color);
-    background-color: brown;
+    background-color: rgba(255, 4, 4, 0.78);
     transition: 0.3s ease-in-out;
+    width: 50%;
 }
 .card-transparent{
     align-items: center;
