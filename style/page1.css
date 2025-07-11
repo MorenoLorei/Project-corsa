@@ -178,6 +178,38 @@ nav ul li a.discord:hover::after {
   top: 50%;
   transform: translateY(-50%);
 }
+.bike{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+
+}
+.bike h2{
+    color: var(--text-color);
+    letter-spacing: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.bike-content{
+
+    gap: 4rem;
+}
+.bike p{
+    color: var(--sec-text-color);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.bike-text ul{
+    text-align: left;
+    color: var(--third-text-color);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
 
 
 
