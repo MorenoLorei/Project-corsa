@@ -204,6 +204,7 @@ nav ul li a.discord:hover::after {
 }
 
 .bike-text ul{
+    margin-top: 3rem;
     text-align: left;
     color: var(--third-text-color);
     letter-spacing: 1px;

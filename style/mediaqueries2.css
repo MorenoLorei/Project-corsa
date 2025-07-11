@@ -73,6 +73,40 @@
     height: 8vh;
   }
 
+  /* Bike section */
+  .bike {
+    padding: 5rem 3rem;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  .bike h2 {
+    font-size: clamp(2.5rem, 3vw, 4rem);
+    letter-spacing: 15px;
+    margin-bottom: 1.5rem;
+  }
+
+  .bike p {
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    margin-bottom: 2rem;
+  }
+
+  .bike-img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .bike-img:hover {
+    transform: scale(1.05);
+  }
+
+  .bike-text ul {
+    margin-top: 3rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+    letter-spacing: 2px;
+  }
+
   /* Footer */
   .footer-content {
     max-width: 1800px;
@@ -135,6 +169,42 @@
     width: 5vh;
     height: 5vh;
   }
+
+  /* Bike section */
+  .bike {
+    padding: 3rem 2rem;
+  }
+
+  .bike h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    letter-spacing: 8px;
+  }
+
+  .bike p {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+  }
+
+  .bike-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bike-text ul {
+    margin-top: 2rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    letter-spacing: 1px;
+  }
+  .bike-text ul{
+    border-radius: 35px;
+    box-shadow: 0 8px 32px 0 rgb(255, 255, 255), 0 0 0 4px rgb(166, 166, 166);
+    list-style: none;
+    margin-top: 1px;
+    text-align: center;
+    color: var(--third-text-color);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -168,13 +238,7 @@
     font-size: clamp(1rem, 4vw, 1.2rem);
     margin-bottom: 1.5rem;
   }
-  .text-muted {
-    position: absolute;
-    bottom: 5%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
+
 
 
   /* Rider section */
@@ -223,6 +287,53 @@
     width: 4vh;
     height: 4vh;
     background-color: rgba(225, 225, 225, 0.8);
+  }
+
+  /* Bike section */
+  .bike {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+
+  .bike h2 {
+    text-wrap: nowrap;
+    color: var(--text-color);
+    letter-spacing: 5px;
+    font-size: clamp(1.2rem, 6vw, 2rem);
+    margin-bottom: 10px;
+  }
+
+  .bike p {
+    color: var(--sec-text-color);
+    letter-spacing: 1px;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+
+  .bike-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .bike-img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .bike-text ul{
+    border-radius: 35px;
+    box-shadow: 0 8px 32px 0 rgb(255, 255, 255), 0 0 0 4px rgb(166, 166, 166);
+    list-style: none;
+    margin-top: 1px;
+    text-align: center;
+    color: var(--third-text-color);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    padding: 1rem;
   }
 
   /* Footer */
