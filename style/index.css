@@ -138,6 +138,40 @@ nav ul li a.discord:hover::after {
 .features-img{
     width: 20rem;
 }
+.rider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.rider-content h2{
+    color: var(--text-color);
+    letter-spacing: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.rider-content p{
+    color: var(--sec-text-color);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.card-transparent{
+    align-items: center;
+    background-color: transparent;
+}
+.card img{
+    justify-content: center;
+    width: 15rem;
+    border-radius: 16px;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
 .leaderboard{
     display: flex;  
     align-items: center;

@@ -40,6 +40,31 @@
     .features-list {
         margin-top: 1rem;
     }
+    /* Rider section */
+    .rider {
+        padding: 2rem;
+    }
+
+    .rider-content h2 {
+        font-size: clamp(1.8rem, 3vw, 2.5rem);
+        letter-spacing: 8px;
+    }
+
+    .rider-content p {
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 12rem;
+    }
+
+    /* Carousel controls */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5vh;
+        height: 5vh;
+    }
 
     /* Leaderboard section */
     .leaderboard {
@@ -117,6 +142,53 @@
         margin-top: 1rem;
         list-style: none;
         font-size: clamp(0.9rem, 4vw, 1rem);
+    }
+    /* Rider section */
+    .rider {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+
+    .rider-content h2 {
+        text-wrap: nowrap;
+        color: var(--text-color);
+        letter-spacing: 5px;
+        font-size: clamp(1.2rem, 6vw, 2rem);
+        margin-bottom: 10px;
+        white-space: normal;
+    }
+
+    .rider-content p {
+        color: var(--sec-text-color);
+        letter-spacing: 1px;
+        font-size: clamp(0.9rem, 3vw, 1rem);
+        margin-bottom: 0;
+        padding: 0 1rem;
+    }
+
+    /* Card carousel */
+    .card-carousel {
+        padding: 0 0.5rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 10rem;
+    }
+
+    .carousel-inner {
+        padding: 0.5em;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 4vh;
+        height: 4vh;
+        background-color: rgba(225, 225, 225, 0.8);
     }
 
     /* Leaderboard section */
@@ -281,7 +353,49 @@
     .features-list {
         font-size: clamp(1rem, 1.2vw, 1.5rem);
     }
+    /* Rider/Track section */
+    .rider {
+        padding: 5rem 3rem;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
 
+    .rider-content h2 {
+        font-size: clamp(2.5rem, 3vw, 4rem);
+        letter-spacing: 15px;
+        margin-bottom: 1.5rem;
+    }
+
+    .rider-content p {
+        font-size: clamp(1.2rem, 1.5vw, 2rem);
+        margin-bottom: 2rem;
+    }
+
+    /* Card carousel */
+    .card-carousel {
+        padding: 0 2rem;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 25rem;
+        transition: transform 0.3s ease;
+    }
+
+    .card img:hover {
+        transform: scale(1.05);
+    }
+
+    .carousel-inner {
+        padding: 2em;
+    }
+
+    /* Carousel controls */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8vh;
+        height: 8vh;
+    }
     /* Leaderboard section */
     .leaderboard {
         max-width: 1800px;
